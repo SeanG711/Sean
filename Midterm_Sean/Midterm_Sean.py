@@ -59,7 +59,7 @@ while True:
             UltrasonicMode = True
 
         if UltrasonicMode:
-            S = sonar.distance
+            S = int(sonar.distance)
             # start timer
             if S > distanceTH and pir.value is False:
                 ledMode = 0

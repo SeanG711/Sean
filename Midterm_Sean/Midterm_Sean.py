@@ -7,7 +7,6 @@ import digitalio
 from digitalio import DigitalInOut, Direction, Pull
 from simpleio import map_range
 
-
 # declare objects and variables
 # pir
 pir = digitalio.DigitalInOut(board.A1)
@@ -26,7 +25,7 @@ breathInterval1 = 0.5
 breathTime = time.monotonic() + breathInterval
 # distance
 distanceTH = 150
-S = sonar.distance
+S = int(sonar.distance)
 UltrasonicMode = False
 # timer
 timer = time.monotonic()
